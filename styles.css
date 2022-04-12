@@ -1,0 +1,137 @@
+@font-face{
+  font-family: norse;
+  src: url(/fonts/Norse-Bold.otf);
+}
+
+:root{
+  font-family: sans-serif;
+}
+
+body{
+  margin: 0;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+}
+.logo-container{
+  font-family: norse;
+  background-image: url("images/leaf.jpg");
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  width: 35vw;
+  display: flex;
+  padding: 20vh 0px;
+  box-sizing: border-box;
+}
+.signup-container{
+  width: 65vw;
+  background-color: #e5e7eb9f;
+}
+.logo{
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.logo img{
+  height: 100px;
+  width: 100px;
+}
+.row{
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 20%;
+  margin-bottom: 20px;
+  gap: 80px;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label{
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.input-container input{
+  padding: 7px 3px;
+  width: 220px;
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+  background-color: rgba(202, 190, 190, 0.07);
+  font-size: 16px;
+}
+
+.input-container input:focus{
+  border: 1px solid blue;
+  box-shadow: 1px 1px 7px 0px #9c9d9e;
+  outline: none;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-container .error{
+  border: 1px solid red;
+}
+
+.input-container .error:focus{
+  border: 1px solid red;
+}
+p.error-msg{
+  margin: 0;
+}
+
+.input-container .error + p::after{
+  font-size: 12px;
+  color: red;
+  content: "*Passwords do not match";
+}
+
+.text{
+  height: calc(20vh + 120px);
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  padding: 15vh 200px 30px 5vw;
+  box-sizing: border-box;
+}
+
+.row-container{
+  padding: 30px 0 30px 5vw ;
+  box-shadow: 1px 4px 7px 0px #9c9d9e;
+  background-color: white;
+}
+
+form button{
+  background-color: #596D48;
+  padding: 15px 40px;
+  margin: 30px 0px 0px 5vw;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+}
+
+button + p{
+  padding: 0px 5vw;
+}
+
+p a{
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
